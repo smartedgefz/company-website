@@ -1,124 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Investment Consultancy | UAE</title>
-  <meta name="description" content="Non-regulated investment consultancy providing market research, financial analysis, and strategic advisory services." />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartEdge Advisory</title>
   <style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background-color: #f5f7fa;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-    header {
-      background-color: #0f172a;
-      color: #fff;
-      padding: 40px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-    header p {
-      margin-top: 10px;
-      font-size: 16px;
-      opacity: 0.9;
-    }
-    section {
-      max-width: 900px;
-      margin: 40px auto;
-      background: #fff;
-      padding: 30px;
-      border-radius: 6px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-    }
-    h2 {
-      color: #0f172a;
-      margin-top: 0;
-    }
-    ul {
-      padding-left: 20px;
-    }
-    footer {
-      text-align: center;
-      font-size: 14px;
-      color: #666;
-      padding: 30px 20px;
-    }
-    .disclaimer {
-      font-size: 14px;
-      color: #555;
-      background: #f1f5f9;
-      padding: 15px;
-      border-left: 4px solid #0f172a;
-      margin-top: 20px;
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; color: #333; }
+    header { background: #0f172a; color: #fff; padding: 40px 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 36px; }
+    nav a { margin: 0 15px; color: #fff; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 900px; margin: auto; }
+    .services li { margin: 10px 0; }
+    footer { text-align: center; padding: 20px; background: #f5f5f5; font-size: 14px; color: #666; }
+    .disclaimer { font-size: 13px; color: #444; margin-top: 20px; border-top: 1px solid #ccc; padding-top: 15px; }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>SmartEdge</h1>
-    <p>Investment Consultancy – United Arab Emirates</p>
+    <h1>SmartEdge Advisory</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <p>Investment consultancy providing strategic market insights and analysis.</p>
   </header>
 
-  <section>
-    <h2>About the Company</h2>
-    <p>
-      SmartEdge is a UAE-based investment consultancy providing non-regulated
-      advisory services to professional and corporate clients. The Company focuses
-      on market research, financial analysis, and strategic investment advisory.
-    </p>
+  <section id="about">
+    <h2>About Us</h2>
+    <p>SmartEdge Advisory is a UAE-based consultancy providing non-regulated financial and investment research services. Our mission is to offer clear and independent market analysis to help clients make informed decisions.</p>
   </section>
 
-  <section>
+  <section id="services">
     <h2>Our Services</h2>
-    <ul>
-      <li>Market research and financial analysis</li>
+    <ul class="services">
+      <li>Market research and trend analysis</li>
       <li>Strategic investment advisory</li>
-      <li>Risk and market assessment</li>
-      <li>Advisory support for investment decision-making</li>
+      <li>Risk evaluation and report generation</li>
     </ul>
   </section>
 
-  <section>
-    <h2>Business Model</h2>
-    <p>
-      The Company operates on a consultancy-based model and charges clients
-      advisory fees under consultancy agreements. Services are provided strictly
-      on an advisory basis.
-    </p>
-
-    <div class="disclaimer">
-      <strong>Disclaimer:</strong><br />
-      The Company does not provide banking services, asset management,
-      portfolio management, brokerage services, or execution of trades on behalf
-      of clients. The Company does not manage or hold client funds.
-    </div>
-    <div class="disclaimer">
-  <strong>Disclaimer:</strong><br />
-  The Company provides analysis and tools for educational and informational purposes only.
-  Trading involves risk and no returns are guaranteed.<br /><br />
-  The Company does not provide banking services, asset management,
-  portfolio management, brokerage services, or execution of trades on behalf
-  of clients. The Company does not manage or hold client funds.
-</div>
-  </section>
-
-  <section>
+  <section id="contact">
     <h2>Contact</h2>
-    <p>
-      Email: <a href="mailto:contact@smartedge.com">contact@smartedge.com</a><br />
-      Location: United Arab Emirates
-    </p>
+    <p>Email: <a href="mailto:contact@smartedge-landing.com">contact@smartedge-landing.com</a></p>
   </section>
 
   <footer>
-    © <span id="year"></span> SmartEdge. All rights reserved.
+    © <span id="year"></span> SmartEdge Advisory
+    <div class="disclaimer">
+      SmartEdge provides analysis and tools for educational and informational purposes only. 
+      Trading involves risk and no returns are guaranteed.<br>
+      The Company does not provide banking, brokerage, or execution services and does not hold client funds.
+    </div>
   </footer>
 
   <script>
