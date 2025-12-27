@@ -1,11 +1,217 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>SmartEdge Test</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartEdge Advisory</title>
+  <meta name="description" content="Non-regulated investment consultancy providing market research, analysis, and strategic advisory services." />
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #0f172a;
+      color: #fff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 16px;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    section {
+      max-width: 900px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 6px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: #0f172a;
+      margin-top: 0;
+    }
+
+    /* SERVICES */
+    .service-item {
+      margin-bottom: 15px;
+    }
+
+    .service-title {
+      width: 100%;
+      text-align: left;
+      padding: 15px;
+      background-color: #0f172a;
+      color: #ffffff;
+      border: none;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .service-title:hover {
+      background-color: #1e293b;
+    }
+
+    .service-content {
+      display: none;
+      padding: 15px;
+      background-color: #f8fafc;
+      border-left: 4px solid #0f172a;
+      margin-top: 5px;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #f1f5f9;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .disclaimer {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #444;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>SmartEdge Advisory</h1>
-  <p>Site online – GitHub Pages OK.</p>
+
+  <header>
+    <h1>SmartEdge Advisory</h1>
+    <p>Investment consultancy providing strategic market insights and analysis</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>
+      SmartEdge Advisory is a UAE-based investment consultancy providing
+      non-regulated advisory services. The Company focuses on market research,
+      financial analysis, and strategic insights to support informed
+      decision-making.
+    </p>
+    <p>
+      All services are provided strictly on an advisory and educational basis.
+      The Company does not manage client funds and does not execute trades on
+      behalf of clients.
+    </p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+
+    <div class="service-item">
+      <button class="service-title" onclick="toggleService('service1')">
+        Market Research & Trend Analysis
+      </button>
+      <div class="service-content" id="service1">
+        <p>
+          In-depth market research and trend analysis based on publicly available
+          data, macroeconomic indicators, and market behavior studies. Designed
+          to support strategic understanding of market dynamics.
+        </p>
+      </div>
+    </div>
+
+    <div class="service-item">
+      <button class="service-title" onclick="toggleService('service2')">
+        Strategic Investment Advisory
+      </button>
+      <div class="service-content" id="service2">
+        <p>
+          Advisory services focused on investment strategy, market positioning,
+          and scenario planning. These services are non-regulated and do not
+          involve execution or management of client funds.
+        </p>
+      </div>
+    </div>
+
+    <div class="service-item">
+      <button class="service-title" onclick="toggleService('service3')">
+        Risk Evaluation & Report Generation
+      </button>
+      <div class="service-content" id="service3">
+        <p>
+          Risk evaluation reports aimed at identifying potential exposure and
+          assessing risk scenarios. Reports are provided for informational and
+          educational purposes only.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      Email: <a href="mailto:contact@smartedge-landing.com">
+        contact@smartedge-landing.com
+      </a><br />
+      Location: United Arab Emirates
+    </p>
+  </section>
+
+  <footer>
+    © <span id="year"></span> SmartEdge Advisory. All rights reserved.
+    <div class="disclaimer">
+      Smartees provides analysis and tools for educational and informational
+      purposes only. Trading involves risk and no returns are guaranteed.<br />
+      The Company does not provide banking services, asset management, portfolio
+      management, brokerage services, or execution of trades on behalf of
+      clients. The Company does not manage or hold client funds.
+    </div>
+  </footer>
+
+  <script>
+    function toggleService(id) {
+      const element = document.getElementById(id);
+      element.style.display =
+        element.style.display === "block" ? "none" : "block";
+    }
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
 </body>
 </html>
