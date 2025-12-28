@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SmartEdge Advisory</title>
 
-  <meta name="description" content="Non-regulated investment and trading advisory providing educational consulting, market research, and strategic insights." />
+  <meta name="description" content="Non-regulated investment consultancy providing educational trading and investment advisory services." />
 
   <style>
     body {
@@ -60,8 +60,9 @@
       margin-top: 0;
     }
 
+    /* SERVICES */
     .service-item {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
     .service-title {
@@ -112,40 +113,128 @@
 
 <body>
 
-  <header>
-    <h1>SmartEdge Advisory</h1>
-    <p>Non-regulated advisory providing educational trading and investment insights</p>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+<header>
+  <h1>SmartEdge Advisory</h1>
+  <p>Non-regulated advisory providing educational trading and investment insights</p>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>
-      SmartEdge Advisory is a UAE-based consultancy providing non-regulated
-      advisory and educational services related to trading and investment.
-      The Company focuses on market research, strategic analysis, and
-      decision-support insights.
-    </p>
-    <p>
-      All services are provided strictly on an advisory and educational basis.
-      The Company does not manage client funds and does not execute trades on
-      behalf of clients.
-    </p>
-  </section>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
 
-  <section id="services">
-    <h2>Our Services</h2>
+<section id="about">
+  <h2>About Us</h2>
 
-    <div class="service-item">
-      <button class="service-title" onclick="toggleService('service1')">
-        Market Research & Trend Analysis
-      </button>
-      <div class="service-content" id="service1">
-        <p>
-          Market research and trend analysis based on publicly available data,
-          macroeconomic indicators, and market behavior studies, designed to
-          support strategic understa
+  <p>
+    SmartEdge Advisory is a UAE-based consultancy providing non-regulated
+    advisory and educational services related to trading and investment.
+    The Company focuses on market research, strategic analysis, and
+    decision-support insights.
+  </p>
+
+  <p>
+    All services are provided strictly on an advisory and educational basis.
+    The Company does not manage client funds and does not execute trades
+    on behalf of clients.
+  </p>
+</section>
+
+<section id="services">
+  <h2>Our Services</h2>
+
+  <!-- SERVICE 1 -->
+  <div class="service-item">
+    <button class="service-title" onclick="toggleService('service1')">
+      Market Research & Trend Analysis
+    </button>
+    <div class="service-content" id="service1">
+      <p>
+        Market research and trend analysis based on publicly available data,
+        macroeconomic indicators, and market behavior studies to support
+        strategic understanding of market dynamics.
+      </p>
+    </div>
+  </div>
+
+  <!-- SERVICE 2 -->
+  <div class="service-item">
+    <button class="service-title" onclick="toggleService('service2')">
+      Trading Advisory (Educational – 3 Levels)
+    </button>
+    <div class="service-content" id="service2">
+      <p>
+        Educational trading advisory services focused on market understanding,
+        trading psychology, and risk management principles.
+      </p>
+
+      <ul>
+        <li><strong>Beginner:</strong> trading fundamentals, risk awareness, discipline</li>
+        <li><strong>Intermediate:</strong> strategy education, market behavior, risk control</li>
+        <li><strong>Advanced:</strong> psychology, scenario analysis, strategic thinking</li>
+      </ul>
+
+      <p>
+        No trade execution, no trading signals, no portfolio or fund management.
+      </p>
+    </div>
+  </div>
+
+  <!-- SERVICE 3 -->
+  <div class="service-item">
+    <button class="service-title" onclick="toggleService('service3')">
+      Investment Advisory
+    </button>
+    <div class="service-content" id="service3">
+      <p>
+        Non-regulated investment advisory services including strategic analysis,
+        market insights, and investment considerations provided on a
+        non-discretionary basis.
+      </p>
+
+      <p>
+        The Company does not provide brokerage services and does not manage
+        or hold client assets.
+      </p>
+    </div>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>
+    Email:
+    <a href="mailto:contact@smartedge-landing.com">
+      contact@smartedge-landing.com
+    </a><br />
+    Location: United Arab Emirates
+  </p>
+</section>
+
+<footer>
+  © <span id="year"></span> SmartEdge Advisory. All rights reserved.
+
+  <div class="disclaimer">
+    SmartEdge provides analysis and tools for educational and informational
+    purposes only. Trading involves risk and no returns are guaranteed.<br />
+    The Company does not provide banking services, asset management,
+    portfolio management, brokerage services, or execution of trades
+    on behalf of clients. The Company does not manage or hold client funds.
+  </div>
+</footer>
+
+<script>
+  function toggleService(id) {
+    const element = document.getElementById(id);
+    element.style.display =
+      element.style.display === "block" ? "none" : "block";
+  }
+
+  document.getElementById("year").textContent =
+    new Date().getFullYear();
+</script>
+
+</body>
+</html>
